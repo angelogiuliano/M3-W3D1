@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .profile-notifications-container {
@@ -12,18 +13,14 @@
 .notifications-container {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
   position: relative;
 }
 
 .notifications-container svg {
   width: 35%;
   height: 35%;
-}
-
-.profile-notifications-container .profile-pic,
-.notifications-container {
-  border-radius: 50%;
-  margin-right: 10px;
 }
 
 .circle {
@@ -42,14 +39,20 @@
 
 .purple {
   background-color: purple;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
+  z-index: 999;
 }
 
 /* main */
 
 main {
   background-color: #7550fe;
+}
+
+.main-info {
+  min-width: 40%;
+  height: 80%;
 }
 
 .main-info h2 {
@@ -69,8 +72,8 @@ main {
 }
 
 .info-container {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 
 .circle-info-container {
@@ -85,7 +88,7 @@ main {
 }
 
 .coures-info-text {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .coures-info-text h6 {
@@ -94,4 +97,33 @@ main {
 
 .coures-info-text p {
   font-size: 10px;
+}
+
+.margin {
+  margin: 0 10vw;
+}
+
+/* recommended */
+
+.recommended h3 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel-control-prev {
+  margin-left: -150px;
+}
+
+.carousel-control-next {
+  margin-right: -150px;
+}
+
+.line {
+    text-decoration: line-through;
 }
