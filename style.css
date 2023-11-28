@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.profile-notifications-container {
+  margin-right: 10px;
+}
+
+.profile-notifications-container .profile-pic,
+.notifications-container {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.notifications-container svg {
+  width: 35%;
+  height: 35%;
+}
+
+.profile-notifications-container .profile-pic,
+.notifications-container {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+}
+
+.green {
+  background-color: green;
+  bottom: 10px;
+  right: 30px;
+}
+
+.purple {
+  background-color: purple;
+  top: 0px;
+  right: 0px;
+}
+
+/* main */
+
+main {
+  background-color: #7550fe;
+}
+
+.main-info h2 {
+  color: white;
+}
+
+.main-info h3 {
+  color: #bca8ff;
+}
+
+.main-buttons a {
+  font-weight: bold;
+}
+
+.btn-success {
+  background-color: #1acb98;
+}
+
+.info-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.circle-info-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffeeda;
+}
+
+.circle-info-container svg {
+  width: 35%;
+}
+
+.coures-info-text {
+  margin-left: 5px;
+}
+
+.coures-info-text h6 {
+  font-size: 12px;
+}
+
+.coures-info-text p {
+  font-size: 10px;
+}
