@@ -31,20 +31,19 @@ body {
   height: 15px;
   border-radius: 50%;
   border: 3px solid white;
-  position: absolute;
 }
 
 .green {
   background-color: green;
-  bottom: 10px;
-  right: 30px;
+  bottom: 5px;
+  right: 5px;
+  z-index: 999;
 }
 
 .purple {
   background-color: purple;
   top: 0;
   right: 0;
-  z-index: 999;
 }
 
 /* main */
@@ -126,14 +125,6 @@ main img {
 .card {
   border-radius: 15px;
   overflow: hidden;
-}
-
-.carousel-control-prev {
-  margin-left: -150px;
-}
-
-.carousel-control-next {
-  margin-right: -150px;
 }
 
 .line {

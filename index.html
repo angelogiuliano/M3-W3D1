@@ -18,6 +18,31 @@
         <a class="navbar-brand" href="#">
           <img src="./assets/logo.svg" alt="" />
         </a>
+        <div class="profile-notifications-container d-flex d-sm-flex d-md-none">
+          <div
+            class="position-relative overflow-visible btn p-0 cursor-pointer bg-body-secondary notifications-container d-flex align-items-center justify-content-center"
+          >
+            <div class="position-absolute circle purple"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="grey"
+              class="bi bi-bell-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
+              />
+            </svg>
+          </div>
+          <div class="profile-cont position-relative">
+            <img
+              class="btn p-0 cursor-pointer profile-pic"
+              src="./assets/avatar-1.jpg"
+              alt=""
+            />
+            <div class="position-absolute circle green"></div>
+          </div>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -92,36 +117,37 @@
               </ul>
             </li>
           </ul>
-          <div
-            class="profile-notifications-container d-flex justify-content-evenly"
+        </div>
+      </div>
+      <div class="profile-notifications-container d-flex d-sm-none d-md-flex">
+        <div
+          class="position-relative overflow-visible btn p-0 cursor-pointer bg-body-secondary notifications-container d-flex align-items-center justify-content-center"
+        >
+          <div class="position-absolute circle purple"></div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="grey"
+            class="bi bi-bell-fill"
+            viewBox="0 0 16 16"
           >
-            <div
-              class="overflow-visible btn p-0 cursor-pointer bg-body-secondary notifications-container d-flex align-items-center justify-content-center"
-            >
-            <div class="circle purple"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="grey"
-                class="bi bi-bell-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
-                />
-              </svg>
-            
-            </div>
-            <div class="profile-cont">
-              <img class="btn p-0 cursor-pointer profile-pic" src="./assets/avatar-1.jpg" alt="" />
-              <div class="circle green"></div>
-            </div>
-          </div>
+            <path
+              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
+            />
+          </svg>
+        </div>
+        <div class="profile-cont position-relative">
+          <img
+            class="btn p-0 cursor-pointer profile-pic"
+            src="./assets/avatar-1.jpg"
+            alt=""
+          />
+          <div class="position-absolute circle green"></div>
         </div>
       </div>
     </nav>
 
-    <main class="d-flex align-items-center">
-      <div class="main-info margin">
+    <main class="d-flex align-items-center flex-wrap">
+      <div class="my-3 col-sm-9 col-md-6 main-info margin">
         <h2>Welcome Web Students!</h2>
         <h3>
           Hand-picked Instructor and expertly crafted <br />
@@ -133,78 +159,86 @@
           <a class="btn btn-light p-3">Are You Instructor?</a>
         </div>
       </div>
-      <img class="" src="./assets/hero-img.png" alt="" />
+      <img class="col-sm-12 col-md-3" src="./assets/hero-img.png" alt="" />
     </main>
 
-    <div class="info-container d-flex">
-      <div class="d-flex courses-info margin">
-        <div
-          class="circle-info-container d-flex align-items-center justify-content-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#c28137"
-            class="bi bi-camera-video"
-            viewBox="0 0 16 16"
+    <div class="info-container">
+      <div class="margin d-flex flex-wrap">
+        <div class="d-flex my-1 courses-info col-sm-12 col-md-4">
+          <div
+            class="circle-info-container d-flex align-items-center justify-content-center"
           >
-            <path
-              fill-rule="evenodd"
-              d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"
-            />
-          </svg>
-        </div>
-        <div class="coures-info-text d-flex flex-column justify-content-center">
-          <h6 class="m-0">30,000 online courses</h6>
-          <p class="m-0">Enjoy a variety of fresh topics</p>
-        </div>
-      </div>
-      <div class="d-flex courses-info margin">
-        <div
-          class="circle-info-container d-flex align-items-center justify-content-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#c28137"
-            class="bi bi-people"
-            viewBox="0 0 16 16"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#c28137"
+              class="bi bi-camera-video"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"
+              />
+            </svg>
+          </div>
+          <div
+            class="coures-info-text d-flex flex-column justify-content-center"
           >
-            <path
-              d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
-            />
-          </svg>
+            <h6 class="m-0">30,000 online courses</h6>
+            <p class="m-0">Enjoy a variety of fresh topics</p>
+          </div>
         </div>
-        <div class="coures-info-text d-flex flex-column justify-content-center">
-          <h6 class="m-0">Expert instruction</h6>
-          <p class="m-0">Find the right instructor for you</p>
-        </div>
-      </div>
-      <div class="d-flex courses-info margin">
-        <div
-          class="circle-info-container d-flex align-items-center justify-content-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#c28137"
-            class="bi bi-clock"
-            viewBox="0 0 16 16"
+        <div class="d-flex my-1 courses-info col-sm-12 col-md-4">
+          <div
+            class="circle-info-container d-flex align-items-center justify-content-center"
           >
-            <path
-              d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"
-            />
-            <path
-              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"
-            />
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#c28137"
+              class="bi bi-people"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
+              />
+            </svg>
+          </div>
+          <div
+            class="coures-info-text d-flex flex-column justify-content-center"
+          >
+            <h6 class="m-0">Expert instruction</h6>
+            <p class="m-0">Find the right instructor for you</p>
+          </div>
         </div>
-        <div class="coures-info-text d-flex flex-column justify-content-center">
-          <h6 class="m-0">Lifetime access</h6>
-          <p class="m-0">Learn on your schedule</p>
+        <div class="d-flex my-1 courses-info col-sm-12 col-md-4">
+          <div
+            class="circle-info-container d-flex align-items-center justify-content-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#c28137"
+              class="bi bi-clock"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"
+              />
+              <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"
+              />
+            </svg>
+          </div>
+          <div
+            class="coures-info-text d-flex flex-column justify-content-center"
+          >
+            <h6 class="m-0">Lifetime access</h6>
+            <p class="m-0">Learn on your schedule</p>
+          </div>
         </div>
       </div>
     </div>
@@ -214,8 +248,8 @@
       <div id="carouselExampleIndicators" class="margin carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="card-container d-flex justify-content-between">
-              <div class="card" style="width: 18rem">
+            <div class="card-container d-flex justify-content-center">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-graphql.jpg"
                   class="d-block w-100"
@@ -330,7 +364,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-javascript.jpg"
                   class="d-block w-100"
@@ -445,7 +479,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-node.jpg"
                   class="d-block w-100"
@@ -560,7 +594,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-laravel.jpg"
                   class="d-block w-100"
@@ -678,8 +712,8 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card-container d-flex justify-content-between">
-              <div class="card" style="width: 18rem">
+            <div class="card-container d-flex justify-content-center">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-graphql.jpg"
                   class="d-block w-100"
@@ -794,7 +828,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-javascript.jpg"
                   class="d-block w-100"
@@ -909,7 +943,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-node.jpg"
                   class="d-block w-100"
@@ -1024,7 +1058,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-laravel.jpg"
                   class="d-block w-100"
@@ -1172,8 +1206,18 @@
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="black"
+              class="bi bi-arrow-right-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+              />
             </svg>
           </span>
           <span class="visually-hidden">Next</span>
@@ -1183,11 +1227,11 @@
 
     <div class="cont">
       <h3 class="margin">Most popular</h3>
-      <div id="carouselExampleIndicators" class="margin carousel slide">
+      <div id="popular" class="margin carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="card-container d-flex justify-content-between">
-              <div class="card" style="width: 18rem">
+            <div class="card-container d-flex justify-content-center">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-html.jpg"
                   class="d-block w-100"
@@ -1302,7 +1346,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-javascript.jpg"
                   class="d-block w-100"
@@ -1417,7 +1461,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-node.jpg"
                   class="d-block w-100"
@@ -1532,7 +1576,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-react.jpg"
                   class="d-block w-100"
@@ -1650,8 +1694,8 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card-container d-flex justify-content-between">
-              <div class="card" style="width: 18rem">
+            <div class="card-container d-flex justify-content-center">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-graphql.jpg"
                   class="d-block w-100"
@@ -1766,7 +1810,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-javascript.jpg"
                   class="d-block w-100"
@@ -1881,7 +1925,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-node.jpg"
                   class="d-block w-100"
@@ -1996,7 +2040,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-laravel.jpg"
                   class="d-block w-100"
@@ -2117,7 +2161,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#popular"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true">
@@ -2140,12 +2184,22 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#popular"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="black"
+              class="bi bi-arrow-right-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+              />
             </svg>
           </span>
           <span class="visually-hidden">Next</span>
@@ -2155,11 +2209,11 @@
 
     <div class="cont">
       <h3 class="margin">Trending</h3>
-      <div id="carouselExampleIndicators" class="margin carousel slide">
+      <div id="trending" class="margin carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="card-container d-flex justify-content-between">
-              <div class="card" style="width: 18rem">
+            <div class="card-container d-flex justify-content-center">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-gatsby.jpg"
                   class="d-block w-100"
@@ -2274,7 +2328,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-html.jpg"
                   class="d-block w-100"
@@ -2389,7 +2443,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-node.jpg"
                   class="d-block w-100"
@@ -2504,7 +2558,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-laravel.jpg"
                   class="d-block w-100"
@@ -2622,8 +2676,8 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card-container d-flex justify-content-between">
-              <div class="card" style="width: 18rem">
+            <div class="card-container d-flex justify-content-center">
+              <div class="card card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-graphql.jpg"
                   class="d-block w-100"
@@ -2738,7 +2792,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card card col-sm-6 col-md-2">
                 <img
                   src="./assets/course-javascript.jpg"
                   class="d-block w-100"
@@ -2853,7 +2907,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card col-md-2 d-sm-none d-md-block">
                 <img
                   src="./assets/course-node.jpg"
                   class="d-block w-100"
@@ -2968,7 +3022,7 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card">
                 <img
                   src="./assets/course-laravel.jpg"
                   class="d-block w-100"
@@ -3089,7 +3143,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#trending"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true">
@@ -3112,12 +3166,22 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#trending"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="black"
+              class="bi bi-arrow-right-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+              />
             </svg>
           </span>
           <span class="visually-hidden">Next</span>
