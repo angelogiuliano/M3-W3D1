@@ -122,10 +122,25 @@ main img {
   font-weight: normal;
 }
 
+.carousel-inner {
+  overflow: visible;
+}
+
 .card {
+  z-index: 999;
   border-radius: 15px;
   overflow: hidden;
   min-width: 230px;
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card > img {
+  overflow: hidden;
 }
 
 .line {
